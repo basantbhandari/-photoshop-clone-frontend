@@ -1,4 +1,3 @@
-console.log("starting the application");
 // create the express server
 var express = require("express");
 var app = express();
@@ -9,15 +8,7 @@ var router = express.Router();
 //  use the public folder for static files
 app.use(express.static("public"));
 
-
-
-
 // listen on the port
 app.listen(port, function () {
-    console.log("listening on port " + port);
+  console.log("listening on port " + port);
 });
-
-
-
-
-
